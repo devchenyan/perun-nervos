@@ -95,8 +95,8 @@ func NewWalletClient(
 		assets:         assets,
 		assetRegister:  assetRegister,
 		rpcClient:      balanceRPC,
-		walletService:  wsc,
-		WalletServer:   wss,
+		walletService:  wsc, // NewWalletServiceClient
+		WalletServer:   wss, // NewWalletServiceServer
 		ChannelService: csc,
 	}
 	wss.SetOnUpdate(p.NotifyAllState)

@@ -127,7 +127,7 @@ func Start(host string, WSSURL string) {
 func main() {
 	SetLogFile("channel_service.log")
 
-	go Start(host_A, WSSURL_A)
+	go Start(host_B, WSSURL_B)
 
 	select {}
 }
